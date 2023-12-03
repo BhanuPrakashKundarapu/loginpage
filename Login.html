@@ -14,6 +14,14 @@
         .bgdf{
             height: 100vh;
         }
+        .body{
+            display: grid;
+            place-items: center;
+        }
+        .content-body{
+            width: 30vw;
+            height: 35vh;
+        }
     </style>
 </head>
 <body>
@@ -24,10 +32,26 @@
         <div>
             <label for="Home">
                 <a href="./index.html">Home</a>
-            </label>
+            </label>    
         </div>
     </div>
-    <div class="body position-absolute mt-5  top-0">
+    <div class="body position-fixed">
+        <div class=" content-body bg-secondary p-4">
+            <form >
+                <div class="my-2 text-light">
+
+                    <label for="Email">Email</label>
+                    <input type="email"  class="form-control">
+                </div>
+                <div class="my-2 text-light">
+                    <label for="password">Password</label>
+                    <input type="password" class="form-control w-100">
+                </div>
+                <input type="submit" value="Login" class="btn btn-primary w-100 my-3">
+            </form>
+        </div>
+    </div>
+    <!-- <div class="body position-absolute mt-5  top-0">
         <div class="body-modal  ">
             <div class="d-flex justify-content-center align-items-center bgdf">
                 <form class="border border-3 border-black p-5 rounded-3 w-50  ">
@@ -39,6 +63,6 @@
                 </form>
             </div>
         </div>
-    </div>
+    </div> -->
 </body>
 </html>
